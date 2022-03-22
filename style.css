@@ -1,0 +1,196 @@
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+body{
+    
+    background-color:#000000
+}
+
+.menu img{
+    margin-top: 15px;
+}
+/* Cor do menu*/
+.menu{
+
+    height:80px;
+
+    background: #2f584a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1a5c32, #003a26);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #0edd95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.menu ul{
+    margin-right:30px;
+    float: right ;
+}
+
+.menu ul li{
+    display: inline;
+}
+
+.menu ul li a{
+    display: inline;
+   /* para o item ficar no centro*/
+   line-height: 5;
+   /**/
+   padding: 15px;
+}
+
+.menu ul li a:hover{
+    color:#000000;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.checkbtn {
+    font-size: 50px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+    font-weight: 700;
+	display: none;
+}
+
+
+/*PRIMEIRA SECTION*/
+.primeiras{
+    
+    width: 60%;
+    display: flex;
+    height: 50vh;
+    border:solid;
+    border-color: #066402;
+    border-width: 5px;
+    margin: 25px auto ;
+    text-align: center;
+    line-height: ;
+}/**/
+
+.eu{
+    margin: auto;
+}
+.texto{
+    margin: auto;
+}
+
+
+/*BOTAO*/
+#check{
+    display: none;
+}
+/**/
+
+
+.segunda{
+    margin: auto;
+    width: 80%;
+    border: solid rgb(4, 114, 4) 5px;
+    text-align: center;
+}
+
+.meio{
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+
+.meio img{
+    width: 18%;
+    margin: 25px  ;
+}
+
+
+/*RESPONSIVEL*/
+@media screen and (max-width:800px) {
+    
+    .checkbtn{
+     display: block;
+    }
+    
+
+    .menu ul li a{
+        font-size:120%;
+        font-weight: bold;
+        color:rgb(255, 255, 255);
+    }
+
+
+    .menu ul li a:hover{
+        color:#ffffff;
+        background-color: rgb(0, 0, 0);
+    }
+
+/*onde o menu tem que estar */
+.menu ul{
+position: fixed;
+width: 100%;
+height: 100vh;
+margin-left: -100%;
+text-align: center;
+margin-top: 8px;
+background-color: rgb(2, 83, 45);
+transition: all 1s;
+
+
+}
+
+/*PARA A LISTA APARECER*/
+.menu ul li{
+    display: block
+}
+
+
+/*botrao para funcionar o click*/
+#check:checked ~ ul {
+    margin-left: 0; 
+    transition: all 1s;
+}
+
+/*PRIMEIRA SECTION*/
+.primeiras{
+    
+    width: 80%;
+    display: block;
+    height: 80vh;
+    border:solid;
+    border-color: #066402;
+    border-width: 5px;
+    margin: 25px auto ;
+    text-align: center;
+    line-height: ;
+}/**/
+
+.segunda{
+    margin: auto;
+    width: 80%;
+    border: solid rgb(4, 114, 4) 5px;
+    text-align: center;
+}
+
+.meio{
+    margin-top: 50px;
+
+}
+
+
+.meio img{
+    border: solid rgb(0, 148, 86) 5px ;
+    width: 80%;
+    margin: 25px auto ;
+}
+
+}
+
+

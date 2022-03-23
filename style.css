@@ -9,6 +9,9 @@
 
 }
 body{
+    background-image: url(imagens/riscos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
     background-color:#000000
 }

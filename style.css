@@ -126,6 +126,10 @@ body{
     width: 100%;
     background-color: #002400;
 }
+.rodape li img{
+    width: 40%;
+    margin: auto;
+}
 
 
 
@@ -146,8 +150,13 @@ body{
 }
 .rodape img{
    
-    margin-top: -15px;
+  /*  margin-top: -15px;*/
      width:45%;
+}
+
+.rodape li a {
+    margin:auto;
+    font-size: large;
 }
 
 /*RESPONSIVEL*/
@@ -237,33 +246,20 @@ transition: all 1s;
 
 }
 
-.rodape{
-
-    height: 60px;
-
-}
 
 .rodape ul{
-    display: grid;
-    grid-template-columns: 3fr 2fr  1fr ;
-    grid-row: 35px;
-    align-content: center;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.rodape ul li {
-    font-size: 15px;
-   margin-top:10px;
-    display: inline;
-}
-
-.rodape img{
-
-    margin-top: 2%;;
+.rodape ul li img{
+   
+    width:45%;
 }
 
 .rodape ul li a {
-    line-height: 3;
+   font-size: small;
 }
 
 

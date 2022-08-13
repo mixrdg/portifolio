@@ -120,43 +120,32 @@ body{
 }
 
 
+
 .rodape{
     margin-top: 40px;
-   height:60px;
-    width: 100%;
-    background-color: #002400;
 }
-.rodape li img{
-    width: 40%;
-    margin: auto;
-}
-
-
-
-
-/*colocar li em linha reta mais facil usando o grid*/
-.rodape ul{
-    margin: auto;
-    display: grid;
-    grid-template-columns: 3fr 2fr  1fr ;
-    grid-row: 35px;
-    align-content: center;
-    text-align:center;
-}/**/
-.rodape ul li {
-    font-size: 25px;
-   margin-top:10px;
-    display: inline;
-}
-.rodape img{
+/*colocar li em linha reta mais facil usando o flxbox*/
+.rodape ul {
    
-  /*  margin-top: -15px;*/
-     width:45%;
+    display: flex;
+    flex-direction: row;
+    background-color: #003a26;
+    width: 100%;
+    
 }
 
-.rodape li a {
-    margin:auto;
-    font-size: large;
+
+.rodape ul li {
+    padding: 3px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+
+.rodape  li a {
+   
+    font-size: 60%;
 }
 
 /*RESPONSIVEL*/
@@ -247,19 +236,24 @@ transition: all 1s;
 }
 
 
+
+}
+
 .rodape ul{
     display: flex;
     flex-direction: column;
+    
     
 }
 
 .rodape ul li img{
    
-    width:45%;
+    width:35%;
 }
 
 .rodape ul li a {
    font-size: small;
+   
 }
 
 

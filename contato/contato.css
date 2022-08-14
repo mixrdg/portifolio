@@ -1,0 +1,241 @@
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+body{
+    background-image: url();
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    background-color:#000000
+}
+/*menu*/
+.menu img{
+    margin-top: 15px;
+}
+/* Cor do menu*/
+.menu{
+
+    height:80px;
+
+    background: #2f584a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #003a26);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #015034); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.menu ul{
+    margin-right:30px;
+    float: right ;
+}
+
+.menu ul li{
+    display: inline;
+}
+
+.menu ul li a{
+    display: inline;
+   /* para o item ficar no centro*/
+   line-height: 5;
+   /**/
+   padding: 15px;
+}
+
+.menu ul li a:hover{
+    color:#000000;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.checkbtn {
+    font-size: 50px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+    font-weight: 700;
+	display: none;
+}
+#check{
+    display: none;
+}
+/*termino do menu*/
+
+
+/*Conteudo*/
+
+/*desfoque*/
+.desfoque::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background-image: url(https://i.postimg.cc/cJFm9rRP/background006.jpg);
+    width: 1200px;
+    height: 800px;
+  
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(5px);
+  }
+    /*desfoque*/
+    
+  
+.conteudo{
+   
+    text-align: center;
+}
+.conteudo a {
+    margin: 15px auto;
+   width: 40%;
+   display:flex;
+   flex-direction:column;
+   padding: 25px;
+   border:solid #015034;
+   border-radius: 20px;
+   font-weight: bold;
+}
+
+.conteudo a:hover{
+    color:black;
+    background-color: rgb(0, 131, 0);
+    border: solid white;
+}
+.foto {
+  margin-left: 32%;
+}
+
+
+
+/*footer*/
+
+.rodape {
+    margin-top: 40px;
+}
+/*colocar li em linha reta mais facil usando o flxbox*/
+.rodape ul {
+   
+    display: flex;
+    flex-direction: row;
+    background-color: #003a26;
+    width: 100%;
+    
+}
+
+
+.rodape ul li {
+    padding: 3px;
+    margin: auto;
+    text-align: center;
+    
+}
+.rodape img{
+    width:25%;
+}
+
+.rodape  li a {
+   
+    font-size: 100%;
+}
+
+/*RESPONSIVEL*/
+@media screen and (max-width:800px) {
+    
+    .checkbtn{
+     display: block;
+    }
+    
+
+    .menu ul li a{
+        font-size:120%;
+        font-weight: bold;
+        color:rgb(20, 245, 0);
+    }
+
+
+    .menu ul li a:hover{
+        color:#064d00;
+        background-color: rgb(228, 228, 228);
+    }
+
+/*onde o menu tem que estar */
+.menu ul{
+position: fixed;
+width: 100%;
+height: 100vh;
+margin-left: -100%;
+text-align: center;
+margin-top: 8px;
+background-color: rgb(0, 26, 6);
+transition: all 1s;
+
+
+}
+
+/*PARA A LISTA APARECER*/
+.menu ul li{
+    display: block
+}
+
+
+/*botrao para funcionar o click*/
+#check:checked ~ ul {
+    margin-left: 0; 
+    transition: all 1s;
+}
+
+}
+#foto {
+    float: none;
+   width: 40%;
+   
+}
+
+.conteudo a {
+    background-color: #0000007c;
+    margin: 15px auto;
+   width: 58%;
+   display:flex;
+   flex-direction:column;
+   padding: 25px;
+   border:solid #015034;
+   border-radius: 20px;
+   font-weight: bold;
+}
+
+.conteudo a:hover{
+    color:black;
+    background-color: rgb(0, 131, 0);
+    border: solid white;
+}
+
+
+
+.rodape ul{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.rodape ul li img{
+   
+    width:35%;
+}
+
+.rodape ul li a {
+    font-size:small; 
+}
